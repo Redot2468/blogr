@@ -22,7 +22,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   color: var(--color-text);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 h1,
@@ -83,6 +83,15 @@ h4 {
 .btn-secondary:hover {
   background: var(--color-white);
   color: #fd7661;
+}
+
+.btn-accent {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 155, 111, 1) 0%,
+    rgba(255, 74, 89, 0.9) 100%
+  );
+  color: var(--color-white);
 }
 
 /* grid */
@@ -206,5 +215,159 @@ h4 {
   .hero-heading {
     font-size: 4.5rem;
     letter-spacing: 1px;
+  }
+}
+
+/* nav */
+.nav {
+  background-color: #fd7661;
+  display: flex;
+  padding: 2rem 1rem;
+}
+
+.nav-mobile {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 3rem 2rem 2rem;
+}
+
+.hamburger {
+  height: 20px;
+  width: 30px;
+  align-self: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.nav-mobile img {
+  border: 1px solid green;
+}
+
+.menu-mobile {
+  width: 100%;
+  text-align: center;
+  background: white;
+  margin: 0 auto;
+  display: none;
+}
+
+.list {
+  padding-left: 0;
+}
+
+.list-darker {
+  width: 80%;
+  margin: 1rem auto 0;
+
+  background: rgb(230, 230, 230);
+  padding: 1px 0;
+}
+
+.list li,
+.list-darker li {
+  list-style-type: none;
+  margin: 2rem;
+}
+
+.list a,
+.list-darker a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+.list a:hover,
+.list-darker a:hover {
+  color: rgb(180, 180, 180);
+}
+
+.menu .btn {
+  margin: 3rem 3rem;
+}
+
+.btn-primary-color {
+  color: #3c3d5c;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 75px;
+    height: 30px;
+    align-self: center;
+  }
+  .nav-desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2rem 6rem 2rem 6rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-button .btn {
+    margin: 0 4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .nav-button .btn-primary-color {
+    color: white;
+    background: none;
+  }
+
+  .nav-button .btn-accent {
+    background: var(--color-white);
+    color: #ff4a4a;
+    transition: all 0.2s;
+  }
+
+  .nav-button .btn-accent:hover {
+    transform: scale(1.15);
+    background: #ff4a4a;
+    color: var(--color-white);
+  }
+
+  .menu .btn {
+    margin: 0;
+    padding: 1.5rem 3rem;
+  }
+
+  .list-darker {
+    width: 80%;
+    margin: 1rem auto 0;
+    display: none;
+    background: rgb(230, 230, 230);
+    padding: 1px 0;
+  }
+
+  .list li {
+    display: inline;
+  }
+
+  .list a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white;
+    transition: color 0.2s;
+  }
+
+  .list a:hover {
+    transform: scale(1.1);
+    color: rgb(180, 180, 180);
+  }
+
+  .menu-mobile {
+    width: 100%;
+    text-align: center;
+    background: none;
+    margin: 0 auto;
   }
 }
