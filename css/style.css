@@ -36,8 +36,9 @@ h4 {
 }
 
 h1 {
-  font-size: 3.3rem;
+  font-size: 3.2rem;
   margin-bottom: 1.5rem;
+  margin-top: -0;
 }
 
 h2 {
@@ -55,9 +56,9 @@ h4 {
 
 /* button */
 .btn {
-  padding: 1.9rem 1.7rem;
+  padding: 1.7rem 2rem;
   border-radius: 50px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -69,7 +70,7 @@ h4 {
 }
 
 .btn-primary:hover {
-  background: #fd7661;
+  background: #ff4a4a;
   color: var(--color-white);
 }
 
@@ -111,7 +112,6 @@ h4 {
 /* block-image-transparency */
 
 .block-image {
-  border: 2px solid green;
   background: url(../images/bg-pattern-circles.svg) no-repeat;
   background-position: center -200px;
   background-size: 500px;
@@ -134,4 +134,40 @@ h4 {
     background-size: 600px;
     height: 500px;
   }
+}
+
+/* hero  */
+
+.hero {
+  border: 2px solid green;
+  min-height: 550px;
+  overflow: hidden;
+  border-bottom-left-radius: 100px;
+}
+
+.hero-image {
+  background: url(../images/bg-pattern-intro-mobile.svg) no-repeat;
+  background-position: center;
+  background-size: 200rem;
+  text-align: center;
+}
+
+.hero-transparency {
+  background: rgba(255, 103, 110, 0.95);
+  height: 550px;
+  padding-top: 20rem;
+}
+
+.hero-content {
+  padding: 0 2rem;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.hero-heading,
+.hero-description {
+  color: white;
+}
+
+.hero-btn .btn {
+  margin: 2rem 0.8rem 0;
 }
