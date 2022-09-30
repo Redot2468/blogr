@@ -421,7 +421,8 @@ h4 {
     background: url(../images/illustration-editor-desktop.svg) no-repeat;
     background-position: 150px center;
     background-size: 550px;
-
+    background-attachment: local;
+    width: 100%;
     grid-area: aside1;
   }
 
@@ -480,5 +481,50 @@ body {
   .mobile-image img {
     width: 350px;
     margin-top: -50px;
+  }
+}
+
+/* laptop */
+
+.features-block {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.laptop-image {
+  background: url(../images/illustration-laptop-mobile.svg) no-repeat;
+  min-height: 350px;
+  margin-top: 2rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid > section {
+}
+
+@media screen and (min-width: 768px) {
+  .features-block {
+    min-height: 600px;
+  }
+  .features-block .grid-1x2 {
+    grid-template-areas: "aside aside1";
+  }
+
+  .laptop-image {
+    margin-top: 0;
+    background: url(../images/illustration-laptop-desktop.svg) no-repeat;
+    background-position: -150px center;
+    background-size: 550px;
+
+    grid-area: aside;
+  }
+
+  .laptop-features {
+    align-self: center;
+    padding-right: 25%;
+  }
+
+  .features h3 {
+    margin-top: 3rem;
   }
 }
