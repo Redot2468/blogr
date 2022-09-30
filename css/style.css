@@ -405,7 +405,6 @@ h4 {
 }
 
 .illustrator .mobile {
-  border: 1px solid green;
   width: 100%;
 }
 
@@ -428,7 +427,6 @@ h4 {
   }
 
   .illustrator .desktop {
-    border: 1px solid green;
     display: block;
     width: 100%;
     position: relative;
@@ -498,14 +496,22 @@ h4 {
 .laptop {
   margin-top: 2rem;
   text-align: center;
+  min-height: 550px;
 }
 
-.laptop-image {
-  background: url(../images/illustration-laptop-mobile.svg) no-repeat;
-  min-height: 350px;
-  margin-top: 2rem;
-  background-position: center;
-  background-size: cover;
+.laptop-image .desktop {
+  display: none;
+}
+
+.laptop-image .mobile {
+  width: 100%;
+}
+
+.illus .laptop-image {
+}
+
+.laptop-features {
+  padding: 3rem;
 }
 
 .grid > section {
@@ -515,20 +521,21 @@ h4 {
   .laptop {
     margin-top: 10rem;
     text-align: left;
-    min-height: 550px;
   }
 
   .laptop .grid-1x2 {
     grid-template-areas: "aside aside1";
   }
 
-  .laptop-image {
-    margin-top: 0;
-    background: url(../images/illustration-laptop-desktop.svg) no-repeat;
-    background-position: -150px center;
-    background-size: 550px;
-    height: 500px;
-    grid-area: aside;
+  .laptop-image .mobile {
+    display: none;
+  }
+
+  .laptop-image .desktop {
+    display: block;
+    width: 100%;
+    position: relative;
+    right: 100px;
   }
 
   .laptop-features {
@@ -549,6 +556,7 @@ h4 {
   color: white;
   padding: 3rem;
   border-top-right-radius: 80px;
+  margin-top: 7rem;
 }
 
 .footer-content {
