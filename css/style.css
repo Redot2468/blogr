@@ -225,7 +225,6 @@ h4 {
 
 /* nav */
 .nav {
-  background-color: none;
   display: flex;
   padding: 2rem 1rem;
 }
@@ -402,6 +401,14 @@ h4 {
   display: none;
 }
 
+.illustrator {
+}
+
+.illustrator .mobile {
+  border: 1px solid green;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .features-block {
     min-height: 600px;
@@ -413,6 +420,7 @@ h4 {
   .illustrator {
     grid-area: aside1;
     justify-self: right;
+    overflow: hidden;
   }
 
   .illustrator .mobile {
@@ -420,6 +428,7 @@ h4 {
   }
 
   .illustrator .desktop {
+    border: 1px solid green;
     display: block;
     width: 100%;
     position: relative;
@@ -475,7 +484,7 @@ h4 {
   }
   .mobile {
     text-align: left;
-    padding: auto 3rem;
+    padding: 0 3rem;
     align-self: center;
   }
   .mobile-image img {
