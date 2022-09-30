@@ -99,7 +99,7 @@ h4 {
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: minmax(10rem, auto);
+  grid-auto-rows: minmax(5rem, auto);
 }
 
 @media screen and (min-width: 768px) {
@@ -121,28 +121,31 @@ h4 {
 
 /* block-image-transparency */
 
-.block-image {
-  background: url(../images/bg-pattern-circles.svg) no-repeat;
-  background-position: center -200px;
-  background-size: 500px;
-  min-height: 500px;
-  overflow: hidden;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-}
-
-.block-transparency {
-  background: rgba(31, 31, 53, 0.9);
-  height: 500px;
+.block-transparency .grid {
+  background: linear-gradient(
+    0deg,
+    rgba(31, 31, 53, 1) 0%,
+    rgb(36, 36, 90) 100%
+  );
+  height: 430px;
+  overflow: visible;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .block-image {
-    border: 2px solid green;
-    background: url(../images/bg-pattern-circles.svg) no-repeat;
-    background-position: -140px -300px;
-    background-size: 600px;
-    height: 500px;
+  .block-transparency .grid {
+    background: linear-gradient(
+      0deg,
+      rgba(31, 31, 53, 1) 0%,
+      rgb(36, 36, 90) 100%
+    );
+    height: 250px;
+    overflow: visible;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 100%;
   }
 }
 
@@ -390,8 +393,8 @@ h4 {
 /* features block */
 
 .features-block {
+  margin-top: 10rem;
   text-align: center;
-  min-height: 600px;
 }
 
 .illustrator {
@@ -399,7 +402,7 @@ h4 {
   min-height: 350px;
   margin-top: 2rem;
   background-position: center;
-  background-size: 450px;
+  background-size: cover;
 }
 
 .grid > section {
@@ -429,5 +432,53 @@ h4 {
 
   .features h3 {
     margin-top: 3rem;
+  }
+}
+
+/* mobile */
+body {
+  height: 1000px;
+  padding-top: 400px;
+}
+
+.mobile {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.mobile-image {
+  text-align: center;
+}
+
+.mobile-image img {
+  width: 300px;
+  margin-top: -150px;
+}
+
+.mobile-block {
+}
+
+.grid > section {
+  border: 2px solid green;
+}
+
+.mobile-heading {
+  font-size: 3.3rem;
+  color: var(--color-white);
+}
+
+.mobile-content {
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    text-align: left;
+    padding: auto 3rem;
+    align-self: center;
+  }
+  .mobile-image img {
+    width: 350px;
+    margin-top: -50px;
   }
 }
