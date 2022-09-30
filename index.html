@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- hero banner and nav -->
@@ -69,7 +70,11 @@
     <div class="features-block">
       <h2>Designed for the future</h2>
       <div class="grid grid-1x2">
-        <section class="illustrator">
+        <section
+          class="illustrator"
+          data-aos="zoom-in-right"
+          data-aos-duration="1500"
+        >
           <img
             src="./images/illustration-editor-mobile.svg"
             alt=""
@@ -82,7 +87,11 @@
           />
         </section>
 
-        <section class="features">
+        <section
+          class="features"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <h3>Introducing an extensible editor</h3>
           <p>
             Blogr features an exceedingly intuitive interface which lets you
@@ -109,11 +118,19 @@
     <section class="block-image block-image-section mobile-block">
       <section class="block-transparency">
         <div class="grid grid-1x2">
-          <section class="mobile-image">
+          <section
+            class="mobile-image"
+            data-aos="zoom-in-right"
+            data-aos-duration="1500"
+          >
             <img src="./images/illustration-phones.svg" alt="" />
           </section>
 
-          <section class="mobile">
+          <section
+            class="mobile"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <h2 class="mobile-heading">State of the Art Infrastructure</h2>
             <p class="mobile-content">
               With reliability and speed in mind, worldwide data centers provide
@@ -130,7 +147,11 @@
 
     <div class="laptop">
       <div class="grid grid-1x2 laptop-grid">
-        <section class="laptop-image">
+        <section
+          class="laptop-image"
+          data-aos="zoom-in-right"
+          data-aos-duration="1500"
+        >
           <img
             src="./images/illustration-laptop-mobile.svg"
             alt=""
@@ -143,7 +164,11 @@
           />
         </section>
 
-        <section class="laptop-features">
+        <section
+          class="laptop-features"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <h3>Free, open, simple</h3>
           <p>
             Blogr is a free and open source application backed by a large
@@ -171,7 +196,7 @@
         <img class="f-logo" src="./images/logo.svg" alt="" />
       </div>
 
-      <div class="product">
+      <div class="product" data-aos="fade-up" data-aos-duration="1500">
         <p class="footer-content">Product</p>
         <ul class="footer-list">
           <li><a href=""> Overview</a></li>
@@ -182,7 +207,7 @@
         </ul>
       </div>
 
-      <div class="company">
+      <div class="company" data-aos="fade-up" data-aos-duration="1500">
         <p class="footer-content">Company</p>
         <ul class="footer-list">
           <li><a href=""> About</a></li>
@@ -192,7 +217,7 @@
         </ul>
       </div>
 
-      <div class="connect">
+      <div class="connect" data-aos="fade-up" data-aos-duration="1500">
         <p class="footer-content">Connect</p>
         <ul class="footer-list">
           <li><a href=""> Contact</a></li>
@@ -201,5 +226,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
